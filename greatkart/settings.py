@@ -16,7 +16,7 @@ SECRET_KEY = env("SECRET_KEY")
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['ec2-3-239-107-109.compute-1.amazonaws.com', '*']
 
 # DEBUG = False
 
