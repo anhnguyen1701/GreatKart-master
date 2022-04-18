@@ -69,12 +69,12 @@ AUTH_USER_MODEL = 'accounts.Account'    # Tên model thay thế cho model user m
 
 DATABASES = {
     'default': {
-        'ENGINE': env("DATABASE_ENGINE"),
-        'NAME': env("DATABASE_NAME"),
-        'USER': env("DATABASE_USER"),
-        'PASSWORD': env("DATABASE_PASSWORD"),
-        'HOST': env("DATABASE_HOST"),
-        'PORT': env("DATABASE_PORT"),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'djangoprojectdb',
+        'USER': 'admin',
+        'PASSWORD': '12345678',
+        'HOST': 'mysql-dbms.cqy1fntaoho1.us-east-1.rds.amazonaws.com',
+        'PORT': '3306',
     }
 }
 
