@@ -2,6 +2,7 @@ from pathlib import Path
 from django.contrib.messages import constants as messages
 
 import environ
+import os
 
 
 env = environ.Env(
@@ -108,14 +109,14 @@ USE_L10N = True
 USE_TZ = True
 
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'static'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 STATICFILES_DIRS = [
-    'greatkart/static'
+    os.path.join(BASE_DIR, 'greatkart/static/')
 ]
 
 # Cầu hình media file
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 MESSAGE_TAGS = {
     messages.ERROR: 'danger',
