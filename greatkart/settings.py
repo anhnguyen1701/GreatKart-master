@@ -70,10 +70,10 @@ AUTH_USER_MODEL = 'accounts.Account'    # Tên model thay thế cho model user m
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'djangoprojectdb',
+        'NAME': 'ecomstore',
         'USER': 'admin',
         'PASSWORD': '12345678',
-        'HOST': 'mysql-dbms.cqy1fntaoho1.us-east-1.rds.amazonaws.com',
+        'HOST': 'greatkart.cqy1fntaoho1.us-east-1.rds.amazonaws.com',
         'PORT': '3306',
     }
 }
